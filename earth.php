@@ -13,7 +13,7 @@
         ?>
 
         <div class="barba-container">
-          <div id="page-cover" class="page page--home sps">
+          <div id="page-cover" class="page page--earth sps">
             
            <h1>Earth</h1>
            <h2>It will utterly annihilate your soul</h2>
@@ -23,7 +23,7 @@
           </button>
 
           </div>
-          <div id="page-info" class="page-info page-info--home sps">
+          <div id="page-info" class="page-info page-info--earth sps">
             
            <h2><i class="zigzag-long"></i><span>Welcome to</span> Earth</h2>
           

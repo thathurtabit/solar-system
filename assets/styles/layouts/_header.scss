@@ -72,15 +72,15 @@
 }
 
 // CURRENT PAGE
-.curr-nav-bob .nav-item.nav-bob::before,
-.curr-nav-mike .nav-item.nav-mike::before,
-.curr-nav-man-from-another-place .nav-item.nav-man::before,
-.curr-nav-the-giant .nav-item.nav-giant::before,
-.curr-nav-laura-palmer .nav-item.nav-laura::before,
-.curr-nav-chester-desmond .nav-item.nav-chester::before,
-.curr-nav-phillip-jefferies .nav-item.nav-phillip::before,
-.curr-nav-dale-cooper .nav-item.nav-dale::before
- {
+.curr-nav-sun .nav-item.nav-sun::before,
+.curr-nav-mercury .nav-item.nav-mercury::before,
+.curr-nav-venus .nav-item.nav-venus::before,
+.curr-nav-earth .nav-item.nav-earth::before,
+.curr-nav-mars .nav-item.nav-mars::before,
+.curr-nav-jupiter .nav-item.nav-jupiter::before,
+.curr-nav-saturn .nav-item.nav-saturn::before,
+.curr-nav-uranus .nav-item.nav-uranus::before,
+.curr-nav-neptune .nav-item.nav-neptune::before {
 	background-color: $brand-primary;
 	width: 12px;
 	height: 12px;

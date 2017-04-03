@@ -173,41 +173,42 @@
     line-height: 0.95;
 }
 
-.page-info.page-info--home::before {
-	content: "Black Lodge";
+.page-info.page-info--sun::before {
+	content: "Sun";
 }
 
-.page-info.page-info--bob::before {
-	content: "Bob";
+.page-info.page-info--mercury::before {
+	content: "Mercury";
 }
 
-.page-info.page-info--mike::before {
-	content: "Mike";
+.page-info.page-info--venus::before {
+	content: "Venus";
 }
 
-.page-info.page-info--man::before {
-	content: "The Man from Another Place";
+.page-info.page-info--earth::before {
+	content: "Earth";
 }
 
-.page-info.page-info--the-giant::before {
-	content: "The Giant";
+.page-info.page-info--mars::before {
+	content: "Mars";
 }
 
-.page-info.page-info--laura-palmer::before {
-	content: "Laur Palmer";
+.page-info.page-info--jupiter::before {
+	content: "Jupiter";
 }
 
-.page-info.page-info--chester-desmond::before {
-	content: "Chester Desmond";
+.page-info.page-info--saturn::before {
+	content: "Saturn";
 }
 
-.page-info.page-info--phillip-jefferies::before {
-	content: "Phillip Jefferies";
+.page-info.page-info--uranus::before {
+	content: "Uranus";
 }
 
-.page-info.page-info--dale-cooper::before {
-	content: "Dale Cooper";
+.page-info.page-info--neptune::before {
+	content: "Neptune";
 }
+	
 
 // TRANSITIONS FOR PAGE INFO
 .page-info.sps {
@@ -275,40 +276,40 @@
 	}
 }
 
-.page--home::before {
-	background-image: url("../images/bg-red-room.jpg");
+.page--sun::before {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/54/Sun_white.jpg");
 }
 
-.page--bob::before {
-	background-image: url("../images/bg-bob.jpg");
+.page--mercury::before {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg");
 }
 
-.page--the-man::before {	
-	background-image: url("../images/bg-the-man.jpg");
+.page--venus::before {	
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg");
 }
 
-.page--mike::before {
-	background-image: url("../images/bg-mike.jpg");
+.page--earth::before {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg");
 }
 
-.page--laura-palmer::before {
-	background-image: url("../images/bg-laura-palmer.jpg");
+.page--mars::before {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg");
 }
 
-.page--the-giant::before {
-	background-image: url("../images/bg-the-giant.jpg");
+.page--jupiter::before {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg");
 }
 
-.page--chester-desmond::before {
-	background-image: url("../images/bg-chester-desmond.jpg");
+.page--saturn::before {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg");
 }
 
-.page--phillip-jefferies::before {
-	background-image: url("../images/bg-phillip-jefferies.jpg");
+.page--uranus::before {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg");
 }
 
-.page--dale-cooper::before {
-	background-image: url("../images/bg-dale-cooper.jpg");
+.page--neptune::before {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg");
 }
 
 .page-info-content {
