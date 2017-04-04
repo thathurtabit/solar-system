@@ -42,11 +42,7 @@
                 </div>
              </div>
 
-             <div class="svg-content-border-wrap">
-               <svg class="svg-content-border">
-                  <rect width="100%" height="100%" />
-                </svg>
-              </div>
+             
 
               <div class="text-center">
                 <cite class="text-center">- Windom Earle</cite>

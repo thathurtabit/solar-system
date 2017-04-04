@@ -164,9 +164,8 @@
 
         // LOAD WEB FONTS
         WebFont.load({
-          google: {
-            families: ['Six Caps', 'Lato', 'Yesteryear']
-          },
+          
+          typekit: { id: 'zws2bee' },
           active: function () {
               
               // FIRE FUNCTIONS AFTER FONT HAS LOADED
