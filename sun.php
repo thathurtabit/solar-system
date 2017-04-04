@@ -40,7 +40,43 @@
           <div class="page-col page--col1">
               <div class="page--title">
                 <h1>Sun</h1>
-                <h2>It will utterly annihilate your soul</h2>
+                <h2>Star Profile:</h2>
+
+                <dl class="profile--dl">
+                  <dt>Age:</dt>
+                  <dd>4.6 Billion Years</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Type:</dt>
+                  <dd>Yellow Dwarf (G2V)</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Diameter:</dt>
+                  <dd>1,392,684 km</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Mass:</dt>
+                  <dd>1.99 × 10^30 kg (333,060 Earths)</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Surface Temp:</dt>
+                  <dd>5,500 °C</dd>
+                </dl>
+
+                <h2>Quick Facts:</h2>
+
+                <ul>
+                  <li>At its centre the Sun reaches temperatures of 15 million °C</li>
+                  <li>The Sun is all the colours mixed together, this appears white to our eyes</li>
+                  <li>The Sun is all the colours mixed together, this appears white to our eyes</li>
+                  <li>The Sun is mostly composed of hydrogen (70%) and Helium (28%)</li>
+                  <li>The Sun is 109 times wider than the Earth and 330,000 times as massive</li>
+
+                </ul>
               </div>
             </div>
 
@@ -53,7 +89,7 @@
 
               <div class="page--snippet">
                 <h2>Did you know?</h2>
-                <p>Once upon a time, there was a place of great goodness, called the White Lodge. Gentle fawns gamboled there amidst happy, laughing spirits...</p>
+                <p>After exhausting its supply of hydrogen, the Sun will eventually turn into a <a href="https://en.wikipedia.org/wiki/Red_giant" target="_blank">red giant</a>, swelling in size until it becomes large enough to consume Mercury, Venus, and the Earth.</p>
               </div>
             </div>
 
