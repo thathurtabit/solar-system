@@ -4,11 +4,11 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #891c17;
+$brand-primary:         #837349;
 $transition-time:       0.5s;
 $transition-bez:       cubic-bezier(.27,.16,.01,.99);
-$navbar-height:         50px;
-
+$navbar-height:         70px;
+$border-color:          rgba(255,255,255,0.1);
 
 // Variables
 //
@@ -99,7 +99,7 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             $blue !default;
+$brand-primary:             #837349 !default;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;

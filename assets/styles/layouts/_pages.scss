@@ -1,5 +1,5 @@
 .page {
-	min-height: 100vh;
+	height: 100vh;
 	display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +8,11 @@
     background-position: center;
     position: relative;
     overflow: hidden;
+
+    // RESPONSIVE
+    @include media-breakpoint-up(md) {
+		flex-direction: row;
+    }
 
 
     &::after  {
@@ -37,21 +42,66 @@
 	}
 }
 
-// Tweak individual pages
-.page.page--home h1,
-.page.page--bob h1,
-.page.page--mike h1,
-.page.page--the-giant h1 {
-	@include media-breakpoint-down(sm) {
-		font-size: 25vw;
+
+.page::before{
+	content: "";
+	transition: opacity $transition-time ease-in-out, transform ($transition-time * 30) ease-out;
+	transition-delay: $transition-time;
+	transform: scale(1);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	z-index: -1;
+
+	.loaded & {
+		opacity: 0.55;
+		transform: scale(1.15);
 	}
 }
 
-.page.page--the-man h1 {
-	@include media-breakpoint-down(sm) {
-		font-size: 15vw;
-	}
+.page--sun::before {
+	background-image: url("../images/bg-sun.jpg");
 }
+
+.page--mercury::before {
+	background-image: url("../images/bg-mercury.jpg");
+}
+
+.page--venus::before {	
+	background-image: url("../images/bg-venus.jpg");
+}
+
+.page--earth::before {
+	background-image: url("../images/bg-earth.jpg");
+}
+
+.page--mars::before {
+	background-image: url("../images/bg-mars.jpg");
+}
+
+.page--jupiter::before {
+	background-image: url("../images/bg-jupiter.jpg");
+}
+
+.page--saturn::before {
+	background-image: url("../images/bg-saturn.jpg");
+}
+
+.page--uranus::before {
+	background-image: url("../images/bg-uranus.jpg");
+}
+
+.page--neptune::before {
+	background-image: url("../images/bg-neptune.jpg");
+}
+
+
 
 .page h1 {
 	transition: transform $transition-time ease-in-out, opacity $transition-time ease-in-out, letter-spacing $transition-time ease-in-out;
@@ -59,6 +109,7 @@
 	opacity: 0;
 	font-size: 15vw;
 	letter-spacing: -20px;
+	margin: $navbar-height / 2 0 0;
 
 	@include media-breakpoint-down(sm) {
 		font-size: 20vw;
@@ -97,6 +148,119 @@
 }
 
 
+// Page layout
+.page-col {
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+		height: 100vh;
+
+		// Vary widths
+		&.page--col1 {
+			width: 50vw;
+		}
+		&.page--col2 {
+			width: 50vw;
+		}
+	}
+}
+
+// Add borders
+.page--col1::after {
+
+	@include media-breakpoint-up(md) {
+		content: "";
+		border-right: 1px solid $border-color;
+		height: 50vh;
+		position: absolute;
+		width: 0;
+		right: 0;
+		top: 50%;
+		margin-top: -25vh;
+	}
+
+}
+
+
+.page--title,
+.page--animation,
+.page--snippet  {
+	width: 100%;
+	padding: 10% 20%
+}
+
+.page--animation,
+.page--snippet {
+	@include media-breakpoint-up(md) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 50vh;
+	}
+}
+
+
+.page--snippet {
+	justify-content: flex-start;
+}
+
+
+.page--animation {
+	margin-top: $navbar-height;
+	position: relative;
+
+	@include media-breakpoint-up(md) {
+		&::before {
+			content: "";
+			border-bottom: 1px solid $border-color;
+			position: absolute;
+			width: 25vw;
+			left: 0;
+			bottom: 0;
+		}
+	}
+}
+
+.page--animation__planet {
+	transition: transform $transition-time $transition-bez, opacity $transition-time ease-out;
+	transition-delay: $transition-time;
+	width: 250px;
+	opacity: 0;
+	transform: scale(1.2);
+	border-radius: 100%;
+	position: relative;
+	overflow: hidden;
+
+	.sps--blw & {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	&::before {
+		transition: transform $transition-time $transition-bez;
+		transition-delay: $transition-time * 2;
+		transform-origin: 100% 50%;
+		content: "";
+		transform: rotate(180deg);
+		background: rgba(0,0,0,0.2);
+		width: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+
+		.sps--blw & {
+			transform: rotate(0);
+		}
+	}
+}
+
 
 .page h2 {
 	transition: transform $transition-time ease-in-out, opacity $transition-time ease-in-out;
@@ -106,6 +270,7 @@
 	font-size: 10px;
 	text-transform: uppercase;
 	letter-spacing: 0.2vw;
+	margin: $navbar-height / 2 0 0;
 
 	&::before,
 	&:after {
@@ -139,10 +304,9 @@
 
 
 .page-info {
-	min-height: 100vh;
+	min-height: 100%;
 	background: $gray-darker;
 	display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -155,7 +319,7 @@
 	transition-delay: $transition-time;
 	content: "";
 	position: absolute;
-	top: 0;
+	top: $navbar-height;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -217,6 +381,7 @@
 		transition-delay: $transition-time;
 		transform: translate(0, 30px);
 		opacity: 0;
+		color: $brand-primary;
 		font-size: 50px;
 		top: 130px;
 		position: relative;
@@ -254,63 +419,6 @@
 }
 
 
-.page::before{
-	content: "";
-	transition: opacity $transition-time ease-in-out, transform ($transition-time * 30) ease-out;
-	transition-delay: $transition-time;
-	transform: scale(1);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
-	z-index: -1;
-
-	.loaded & {
-		opacity: 1;
-		transform: scale(1.15);
-	}
-}
-
-.page--sun::before {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/54/Sun_white.jpg");
-}
-
-.page--mercury::before {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg");
-}
-
-.page--venus::before {	
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg");
-}
-
-.page--earth::before {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg");
-}
-
-.page--mars::before {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg");
-}
-
-.page--jupiter::before {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg");
-}
-
-.page--saturn::before {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg");
-}
-
-.page--uranus::before {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg");
-}
-
-.page--neptune::before {
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg");
-}
 
 
 .sps h2,

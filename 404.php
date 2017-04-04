@@ -22,10 +22,7 @@
           </div>
                     
 
-          <?php
-            // CHARACTER MENU
-            include('dist/includes/character-menu.inc.php');
-          ?>
+          
         </div>
       </main><!-- /.main -->
                                      

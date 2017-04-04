@@ -49,7 +49,7 @@
           //var getURL = window.location.pathname.split("/").pop();
           var getURL = window.location.pathname;
           var getURLsplit = getURL.split("/"); // split into array
-          var myPath = getURLsplit[1]; // get part of the array
+          var myPath = getURLsplit[2]; // get part of the array
           var currentURL = 'curr-nav-' + myPath;
         
             //Remove all classes by default
@@ -163,8 +163,7 @@
         }
 
         // LOAD WEB FONTS
-        WebFont.load({
-          
+        WebFont.load({          
           typekit: { id: 'zws2bee' },
           active: function () {
               

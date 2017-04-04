@@ -41,7 +41,6 @@ h1, h2, h3, h4, h5 {
 
 	@include media-breakpoint-up(md) {
 		margin-top: 0;
-		margin-left: $navbar-height;
 	}
 }
 
@@ -57,10 +56,6 @@ h1, h2, h3, h4, h5 {
 	width: 30px;
 	height: 30px;
 	margin-left: -15px;
-
-	@include media-breakpoint-up(md) {
-		margin-left: 10px;
-	}
 
 	&.hello-app {
 		transform: translate(0, 0);
