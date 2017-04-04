@@ -69,7 +69,7 @@
 
                 <h2>Quick Facts:</h2>
 
-                <ul>
+                <ul class="profile--list">
                   <li>At its centre the Sun reaches temperatures of 15 million °C</li>
                   <li>The Sun is all the colours mixed together, this appears white to our eyes</li>
                   <li>The Sun is all the colours mixed together, this appears white to our eyes</li>

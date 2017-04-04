@@ -158,7 +158,6 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		
 		height: 100vh;
 
 		// Vary widths
@@ -192,6 +191,7 @@
 .page--snippet  {
 	width: 100%;
 	padding: 10% 40px;
+	font-size: 18px;
 }
 
 .page--animation,
@@ -208,7 +208,6 @@
 
 .page--snippet {
 	justify-content: flex-start;
-	font-size: 18px;
 	max-width: 530px;
 }
 
@@ -237,12 +236,21 @@
 .page--animation__planet {
 	transition: transform $transition-time $transition-bez, opacity $transition-time ease-out;
 	transition-delay: $transition-time;
-	width: 250px;
+	width: 200px;
 	opacity: 0;
 	transform: scale(1.2);
 	border-radius: 100%;
 	position: relative;
 	overflow: hidden;
+
+	// RESPONSIVE HEIGHTS
+	@media screen and (max-height: 685px) {
+		width: 150px;
+	}
+
+	@media screen and (max-height: 500px) {
+		width: 100px;
+	}
 
 	.sps--blw & {
 		opacity: 1;
@@ -389,7 +397,7 @@
 		transform: translate(0, 30px);
 		opacity: 0;
 		color: $brand-primary;
-		font-size: 50px;
+		font-size: 35px;
 		top: 130px;
 		position: relative;
 		padding-left: 20px;
@@ -397,6 +405,7 @@
 		padding-top: 10px;
 	    padding-bottom: 10px;
 	    border-radius: 5px;
+	    margin-bottom: 20px;
 
 		@include media-breakpoint-up(md) {
 			top: 10px;
@@ -428,14 +437,19 @@
 
 .profile--dl {
 	display: flex;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 	font-size: 16px;
+
+	&:last-of-type {
+		margin-bottom: 30px;
+	}
 
 	dt {
 		width: 20%;
 		flex: 0 0 20%;
 		font-size: 12px;
 		text-transform: uppercase;
+		color: darken($white, 50%);
 	}
 	dd {
 		width: 80%;
@@ -443,7 +457,29 @@
 	}
 }
 
+.profile--list {
+	padding: 0;
+	list-style-type: none;
+	margin-bottom: 30px;
 
+	li {
+		margin-left: 20px;
+		position: relative;
+		margin-bottom: 5px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -20px;
+			top: 12px;
+			background: $brand-primary;
+			border-radius: 100%;
+			border-radius: 100%;
+			width: 5px;
+			height: 5px;	
+		}
+	}
+}
 
 .sps h2,
 .bio-img-col,
@@ -453,35 +489,4 @@
 	z-index: 3;
 }
 
-// DL Row
-.text-col dl {
-	@extend .row;
-	@extend .no-gutters;
-	margin-bottom: 5px;
-}
-
-// DT title
-.text-col dt {
-	@extend .col-2;
-	text-transform: uppercase;
-	text-align: right;
-	color: $gray;
-	margin-right: 10px;
-	font-size: 10px;
-    line-height: 21px;
-    padding: 0;
-
-    @include media-breakpoint-up(md) {
-		font-size: 11px;
-		letter-spacing: 1px;
-		line-height: 21px;
-    }
-}
-
-// DD Fefinition
-.text-col dd {
-	@extend .col-9;
-	font-size: 13px;
-	margin: 0;
-}
 
