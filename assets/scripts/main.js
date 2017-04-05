@@ -66,54 +66,6 @@
         });
 
 
-        // Open or Close the Video Modal
-        function openCloseModal() {
-
-          // SHOW & HIDE SEARCH BOX
-          $(".video-open-close").click(function(){
-            // Set var
-            var videoModal = $(".video-modal");
-
-            if (videoModal.is(':visible') || videoModal.hasClass("open")) {
-              
-              videoModal.removeClass("open").delay(250).hide(10);
-
-              $("iframe").each(function() { 
-                  var src= $(this).attr('src');
-                  $(this).attr('src',src);  
-              });
-
-            } else {
-              videoModal.show(1).addClass("open");
-            }
-            
-          });
-
-        }
-
-
-        // Open or Close Character Overlay screen
-        function openCloseCharacterOverlay() {
-          // Set var
-          var characterModal = $(".characters-modal");
-
-          // SHOW & HIDE SEARCH BOX
-          $(".characters-open-close").click(function(){
-
-            if (characterModal.is(':visible') || characterModal.hasClass("open")) {
-              
-              characterModal.removeClass("open").delay(250).hide(10);
-
-            } else {
-              characterModal.show(1).addClass("open");
-            }
-            
-          });
-
-        }
-     
-        
-
         // Enable BS tooltips (if not touchscreen)
         if(!('ontouchstart' in window)) {
           $(function () {
@@ -122,32 +74,32 @@
         }
         
 
-        // SCROLL TO SECTION FUNCTION
-        function scrollSections() {
-          // Mouse scroll / slide
-          var indicator = new WheelIndicator({
-            elem: document.querySelector('.barba-container'),
-            callback: function(e){
+        // // SCROLL TO SECTION FUNCTION
+        // function scrollSections() {
+        //   // Mouse scroll / slide
+        //   var indicator = new WheelIndicator({
+        //     elem: document.querySelector('.barba-container'),
+        //     callback: function(e){
 
-              if (e.direction === "down") {
+        //       if (e.direction === "down") {
 
-                  $('html, body').animate({
-                      scrollTop: ($('#page-info').offset().top)
-                  },500);
+        //           $('html, body').animate({
+        //               scrollTop: ($('#page-info').offset().top)
+        //           },500);
                 
 
-              } else if (e.direction === "up") {
+        //       } else if (e.direction === "up") {
 
-                $('html, body').animate({
-                    scrollTop: ($('#page-cover').offset().top)
-                },500);  
+        //         $('html, body').animate({
+        //             scrollTop: ($('#page-cover').offset().top)
+        //         },500);  
                 
-              }
-            }
-          });
-          //The method call
-          indicator.getOption('preventMouse'); // true
-        }
+        //       }
+        //     }
+        //   });
+        //   //The method call
+        //   indicator.getOption('preventMouse'); // true
+        // }
 
         // USE http://imagesloaded.desandro.com/#background
         // To see if images were loaded before displaying them
@@ -183,10 +135,8 @@
         onURLChange();
         Barba.Pjax.start();
         checkImages();
-        scrollSections();
+        //scrollSections();
         scrollButtons();
-        openCloseModal();
-        openCloseCharacterOverlay();
         Barba.Dispatcher.on('linkClicked', function() {
           // Scroll to the top of the current slide
           $(".barba-container").fadeOut(250, function(){
@@ -198,12 +148,10 @@
           // Make sure the scroll spy is working on new slide
           $(".barba-container").fadeIn(50);
           ScrollPosStyler.init();
-          scrollSections();
+          //scrollSections();
           scrollButtons();
           loaderAnim();
           onURLChange();
-          openCloseModal();
-          openCloseCharacterOverlay();
         });
 
 
