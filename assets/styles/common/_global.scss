@@ -4,6 +4,7 @@ body {
 	background: $gray-darker;
 	opacity: 0;
 	overflow-y: scroll;
+	line-height: 1.6;
 
 	// but when we're ready to go, let it rip
 	&.page-ready {
@@ -25,7 +26,6 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
 	font-family: $font-family-sans-serif;
-
 	span {
 		font-family: $font-family-serif;
 	}

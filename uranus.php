@@ -16,39 +16,98 @@
           <div id="page-cover" class="page page--uranus sps">
             
            <h1>Uranus</h1>
-           <h2>It will utterly annihilate your soul</h2>
+           <h2>The Ice Giant</h2>
 
            <button class="btn-scroll btn-scroll--down">
             <span class="sr-only">Scroll down</span>
           </button>
 
           </div>
+          
+
+          <!-- PAGE INFO -->
           <div id="page-info" class="page-info page-info--uranus sps">
             
-           <h2><i class="zigzag-long"></i><span>Welcome to</span> Uranus</h2>
           
-          <div class="page-info-content container-fluid">
-             <div class="row">
-                <div class="col-md-4 offset-md-2 text-col">
-                  <p>Once upon a time, there was a place of great goodness, called the White Lodge. Gentle fawns gamboled there amidst happy, laughing spirits...</p>
+          <div class="page-col page--col1">
+              <div class="page--title">
+                <h1>Uranus</h1>
+                <h2>Planet Profile:</h2>
 
-                  <p>The sounds of innocence and joy filled the air.  And when it rained, it rained sweet nectar that infused one's heart with a desire to live life in truth and beauty. Generally speaking, a ghastly place, reeking of virtue's sour smell. Engorged with the whispered prayers of kneeling mothers, mewling newborns, and fools, young and old, compelled to do good without reason...</p>
+                <dl class="profile--dl">
+                  <dt>Equatorial Diameter:</dt>
+                  <dd>51,118 km</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Orbit Peroid:</dt>
+                  <dd>30,687 days (84.0 years)</dd>
+                </dl>                
+
+                <dl class="profile--dl">
+                  <dt>Mass:</dt>
+                  <dd>8.68 × 10^25 kg (15 Earths)</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Effective Temp:</dt>
+                  <dd>-216 &deg;C</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Discovered:</dt>
+                  <dd>March 13th 1781</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Discovered by:</dt>
+                  <dd>William Herschel</dd>
+                </dl>
+
+                <h2>Quick Facts:</h2>
+
+                <ul class="profile--list">
+                  <li>Uranus was officially discovered by Sir William Herschel in 1781</li>
+                  <li>Uranus is only visible via telescope</li>
+                  <li>Uranus turns on its axis once every 17 hours, 14 minutes</li>
+                  <li>Uranus is often referred to as an "ice giant" planet</li>
+                  <li>Uranus hits the coldest temperatures of any planet, with a minimum atmospheric temperature of -224 &deg;C</li>
+                  
+                </ul>
+
+                <p class="cite-p"><cite>- <a href="http://space-facts.com/" title="Info: Space Facts" target="_blank" class="btn-slide-bg">More Facts</a></cite> </p>
+                <p class="cite-p"><cite>- <a href="https://en.wikipedia.org/wiki/Uranus" title="Wiki" target="_blank" class="btn-slide-bg">Further Reading</a></cite> </p>
+              </div>
+            </div>
+
+            <div class="page-col page--col2">
+              <div class="page--animation">
+                <div class="page--animation__planet">
+                  <h4>Uranus</h4>
+                  <img src="dist/images/img-uranus-300x.png" alt="Uranus" />                  
                 </div>
-
-                <div class="col-md-4 text-col">
-                  <p>BUT, I am happy to point out that our story does not end in this wretched place of saccharine excess. For there's another place, its opposite...</p>
-
-                  <p>A place of almost unimaginable power, chock full of dark forces and vicious secrets. No prayers dare enter this frightful maw. The spirits there care not for good deeds or priestly invocations, they're as likely to rip the flesh from your bone as greet you with a happy "good day." And if harnessed, these spirits in this hidden land of unmuffled screams and broken hearts would offer up a power so vast that its bearer might reorder the Earth itself to his liking.</p>
+                
+                <div class="page--animation__satellites">
+                <h4>Moons</h4>
+                  <ul class="profile--satellites">
+                    <li>Miranda</li>
+                    <li>Ariel</li>
+                    <li>Umbriel</li>
+                    <li>Titania</li>
+                    <li>Oberon</li>
+                    <li>Puck</li>
+                    <li>Belinda</li>
+                    <li>Desdemona</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Moons_of_Uranus" target="_blank">+ 19 others</a></li>
+                  </ul>
                 </div>
-             </div>
+              </div>
 
-             
-
-              <div class="text-center">
-                <cite class="text-center">- Windom Earle</cite>
-               </div>
-
-           </div>
+              <div class="page--snippet">
+                <h3>Did you know?</h3>
+                <p>Uranus is tipped over on its side with an axial tilt of 98 degrees. It is often described as "rolling around the Sun on its side."</p>
+              </div>
+            </div>
 
            
 
@@ -56,12 +115,12 @@
             <span class="sr-only">Scroll up</span>
           </button>
 
-          <a href="<?php echo $root; ?>/bob" class="btn-next" goto-bob>
-            <span><strong>Meet:</strong> Bob</span>
+          <a href="<?php echo $root; ?>/neptune" class="btn-next">
+            <span><strong>Visit:</strong> Neptune</span>
           </a>
 
           </div>
-
+          <!-- ! PAGE INFO -->
           
 
         </div>

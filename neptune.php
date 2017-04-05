@@ -23,32 +23,91 @@
           </button>
 
           </div>
+          
+
+           <!-- PAGE INFO -->
           <div id="page-info" class="page-info page-info--neptune sps">
             
-           <h2><i class="zigzag-long"></i><span>Welcome to</span> Neptune</h2>
           
-          <div class="page-info-content container-fluid">
-             <div class="row">
-                <div class="col-md-4 offset-md-2 text-col">
-                  <p>Once upon a time, there was a place of great goodness, called the White Lodge. Gentle fawns gamboled there amidst happy, laughing spirits...</p>
+          <div class="page-col page--col1">
+              <div class="page--title">
+                <h1>Neptune</h1>
+                <h2>Planet Profile:</h2>
 
-                  <p>The sounds of innocence and joy filled the air.  And when it rained, it rained sweet nectar that infused one's heart with a desire to live life in truth and beauty. Generally speaking, a ghastly place, reeking of virtue's sour smell. Engorged with the whispered prayers of kneeling mothers, mewling newborns, and fools, young and old, compelled to do good without reason...</p>
+                <dl class="profile--dl">
+                  <dt>Equatorial Diameter:</dt>
+                  <dd>49,528 km</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Orbit Peroid:</dt>
+                  <dd>60,190 days (164.8 years)</dd>
+                </dl>                
+
+                <dl class="profile--dl">
+                  <dt>Mass:</dt>
+                  <dd>1.02 × 10^26 kg (17 Earths)</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Effective Temp:</dt>
+                  <dd>-214 &deg;C</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Discovered:</dt>
+                  <dd>September 23rd 1846</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Discovered by:</dt>
+                  <dd>Urbain Le Verrier &amp; Johann Galle</dd>
+                </dl>
+
+                <h2>Quick Facts:</h2>
+
+                <ul class="profile--list">
+                  <li>Neptune is the smallest of the ice giants, but has a greater mass than Uranus</li>
+                  <li>Neptune appears blue because the methane absorbs the red light</li>
+                  <li>Large storms whirl through its upper atmosphere, and high-speed winds track around the planet at up 600 meters per second</li>
+                  <li>Neptune has a very thin collection of rings</li>
+                  <li>Neptune spins on its axis very rapidly, despite its size, the clouds on its equator circle the planet every 18 hours</li>
+                  
+                </ul>
+
+                <p class="cite-p"><cite>- <a href="http://space-facts.com/" title="Info: Space Facts" target="_blank" class="btn-slide-bg">More Facts</a></cite> </p>
+                <p class="cite-p"><cite>- <a href="https://en.wikipedia.org/wiki/Neptune" title="Wiki" target="_blank" class="btn-slide-bg">Further Reading</a></cite> </p>
+              </div>
+            </div>
+
+            <div class="page-col page--col2">
+              <div class="page--animation">
+                <div class="page--animation__planet">
+                  <h4>Neptune</h4>
+                  <img src="dist/images/img-neptune-300x.png" alt="Neptune" />                  
                 </div>
-
-                <div class="col-md-4 text-col">
-                  <p>BUT, I am happy to point out that our story does not end in this wretched place of saccharine excess. For there's another place, its opposite...</p>
-
-                  <p>A place of almost unimaginable power, chock full of dark forces and vicious secrets. No prayers dare enter this frightful maw. The spirits there care not for good deeds or priestly invocations, they're as likely to rip the flesh from your bone as greet you with a happy "good day." And if harnessed, these spirits in this hidden land of unmuffled screams and broken hearts would offer up a power so vast that its bearer might reorder the Earth itself to his liking.</p>
+                
+                <div class="page--animation__satellites">
+                <h4>Moons</h4>
+                  <ul class="profile--satellites">
+                    <li>Triton</li>
+                    <li>Nereid</li>
+                    <li>Proteus</li>
+                    <li>Despina</li>
+                    <li>Larissa</li>
+                    <li>Galatea</li>
+                    <li>Thalassa</li>
+                    <li>Naiad</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Moons_of_Neptune" target="_blank">+ 6 others</a></li>
+                  </ul>
                 </div>
-             </div>
+              </div>
 
-             
-
-              <div class="text-center">
-                <cite class="text-center">- Windom Earle</cite>
-               </div>
-
-           </div>
+              <div class="page--snippet">
+                <h3>Did you know?</h3>
+                <p>Neptune has an incredibly thick atmosphere comprised of 74% hydrogen, 25% helium and approximately 1% methane. Its atmosphere also contains icy clouds and the fastest winds recorded in the solar system.</p>
+              </div>
+            </div>
 
            
 
@@ -56,11 +115,12 @@
             <span class="sr-only">Scroll up</span>
           </button>
 
-          <a href="<?php echo $root; ?>/bob" class="btn-next" goto-bob>
-            <span><strong>Meet:</strong> Bob</span>
+          <a href="<?php echo $root; ?>/sun" class="btn-next">
+            <span><strong>Visit:</strong> Sun</span>
           </a>
 
           </div>
+          <!-- ! PAGE INFO -->
 
           
 

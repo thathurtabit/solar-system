@@ -16,39 +16,84 @@
           <div id="page-cover" class="page page--venus sps">
             
            <h1>Venus</h1>
-           <h2>It will utterly annihilate your soul</h2>
+           <h2>Earth's 'sister planet'</h2>
 
            <button class="btn-scroll btn-scroll--down">
             <span class="sr-only">Scroll down</span>
           </button>
 
           </div>
+          
+
+          <!-- PAGE INFO -->
           <div id="page-info" class="page-info page-info--venus sps">
             
-           <h2><i class="zigzag-long"></i><span>Welcome to</span> Venus</h2>
           
-          <div class="page-info-content container-fluid">
-             <div class="row">
-                <div class="col-md-4 offset-md-2 text-col">
-                  <p>Once upon a time, there was a place of great goodness, called the White Lodge. Gentle fawns gamboled there amidst happy, laughing spirits...</p>
+          <div class="page-col page--col1">
+              <div class="page--title">
+                <h1>Venus</h1>
+                <h2>Planet Profile:</h2>
 
-                  <p>The sounds of innocence and joy filled the air.  And when it rained, it rained sweet nectar that infused one's heart with a desire to live life in truth and beauty. Generally speaking, a ghastly place, reeking of virtue's sour smell. Engorged with the whispered prayers of kneeling mothers, mewling newborns, and fools, young and old, compelled to do good without reason...</p>
+                <dl class="profile--dl">
+                  <dt>First Record:</dt>
+                  <dd>17th century BC</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Discovered by:</dt>
+                  <dd>Babylonian astronomers</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Diameter:</dt>
+                  <dd>12,104 km</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Mass:</dt>
+                  <dd>4.87 x 10^24 kg (81.5% Earth)</dd>
+                </dl>
+
+                <dl class="profile--dl">
+                  <dt>Surface Temp:</dt>
+                  <dd>462&deg;C</dd>
+                </dl>
+
+                <h2>Quick Facts:</h2>
+
+                <ul class="profile--list">
+                  <li>A year on Venus takes 225 Earth days</li>
+                  <li>Venus is nearly as big as the Earth with a diameter of 12,104 km</li>
+                  <li>A day on the surface of Venus (solar day) would appear to take 117 Earth days</li>
+                  <li>The surface temperature on Venus can reach 471&deg;C</li>
+                  
+                </ul>
+
+                <p class="cite-p"><cite>- <a href="http://space-facts.com/" title="Info: Space Facts" target="_blank" class="btn-slide-bg">More Facts</a></cite> </p>
+                <p class="cite-p"><cite>- <a href="https://en.wikipedia.org/wiki/Venus" title="Wiki" target="_blank" class="btn-slide-bg">Further Reading</a></cite> </p>
+              </div>
+            </div>
+
+            <div class="page-col page--col2">
+              <div class="page--animation">
+                <div class="page--animation__planet">
+                  <h4>Venus</h4>
+                  <img src="dist/images/img-venus-300x.png" alt="Venus" />                  
                 </div>
-
-                <div class="col-md-4 text-col">
-                  <p>BUT, I am happy to point out that our story does not end in this wretched place of saccharine excess. For there's another place, its opposite...</p>
-
-                  <p>A place of almost unimaginable power, chock full of dark forces and vicious secrets. No prayers dare enter this frightful maw. The spirits there care not for good deeds or priestly invocations, they're as likely to rip the flesh from your bone as greet you with a happy "good day." And if harnessed, these spirits in this hidden land of unmuffled screams and broken hearts would offer up a power so vast that its bearer might reorder the Earth itself to his liking.</p>
+                
+                <div class="page--animation__satellites">
+                <h4>Moons</h4>
+                  <ul class="profile--satellites">
+                    <li>None</li>
+                  </ul>
                 </div>
-             </div>
+              </div>
 
-             
-
-              <div class="text-center">
-                <cite class="text-center">- Windom Earle</cite>
-               </div>
-
-           </div>
+              <div class="page--snippet">
+                <h3>Did you know?</h3>
+                <p>The surface of the planet is obscured by an opaque layer of clouds made up of sulphuric acid.</p>
+              </div>
+            </div>
 
            
 
@@ -56,11 +101,13 @@
             <span class="sr-only">Scroll up</span>
           </button>
 
-          <a href="<?php echo $root; ?>/bob" class="btn-next" goto-bob>
-            <span><strong>Meet:</strong> Bob</span>
+          <a href="<?php echo $root; ?>/earth" class="btn-next">
+            <span><strong>Visit:</strong> Earth</span>
           </a>
 
           </div>
+          <!-- ! PAGE INFO -->
+
 
           
 

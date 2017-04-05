@@ -237,7 +237,7 @@ $font-family-sans-serif:  'balboa-plus-inline', "Segoe UI", Roboto, "Helvetica N
 $font-family-sans-serif-alt:  'futura-pt', "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif-alt !default;
+$font-family-base:      'open-sans', "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 16px !default;

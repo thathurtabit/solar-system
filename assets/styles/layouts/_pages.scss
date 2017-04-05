@@ -185,13 +185,17 @@
 	}
 }
 
+.page--col2 {
+	align-items: flex-start;
+}
+
 
 .page--title,
 .page--animation,
 .page--snippet  {
 	width: 100%;
-	padding: 10% 40px;
-	font-size: 18px;
+	padding: 50px 40px 30px;
+	font-size: 15px;
 }
 
 .page--animation,
@@ -208,7 +212,9 @@
 
 .page--snippet {
 	justify-content: flex-start;
+	align-items: flex-start;
 	max-width: 530px;
+	padding-left: 15%;
 }
 
 .page--title {
@@ -233,15 +239,40 @@
 	}
 }
 
+.page--animation {
+	flex-direction: row;
+}
+
+.page--animation__planet,
+.page--animation__satellites {
+	flex: 0 0 50%;
+}
+
+.page--animation__satellites {
+	padding: 0 5%;
+}
+
 .page--animation__planet {
 	transition: transform $transition-time $transition-bez, opacity $transition-time ease-out;
 	transition-delay: $transition-time;
-	width: 200px;
+	max-width: 200px;
 	opacity: 0;
 	transform: scale(1.2);
 	border-radius: 100%;
 	position: relative;
 	overflow: hidden;
+
+	h4 {
+	    position: absolute;
+	    color: rgba(255,255,255,0.5)!important;
+	    top: 50%;
+	    width: 100%;
+	    margin: 0 auto;
+	    text-align: center;
+	    margin-top: -17px;
+	    font-size: 40px;
+	    z-index: 2;
+	}
 
 	// RESPONSIVE HEIGHTS
 	@media screen and (max-height: 685px) {
@@ -269,11 +300,37 @@
 		top: 0;
 		left: 0;
 		bottom: 0;
+		z-index: 1;
 
 		.sps--blw & {
 			transform: rotate(0);
 		}
 	}
+}
+
+.img-saturn {
+	transform: rotate(-45deg);
+}
+
+// Change up for Saturn
+.page--animation__planet.saturn-ring {
+	overflow: visible;
+	
+	&::before {
+		display: none;
+	}
+}
+
+// Add a ring for Saturn
+.page--animation__planet-saturn-ring {
+	position: absolute;
+    width: 200%;
+    height: 137%;
+    left: -24%;
+    top: -18%;
+    opacity: 0.5;
+    background: url(../images/img-saturn-rings.png) no-repeat;
+    background-size: contain;
 }
 
 
@@ -316,7 +373,12 @@
 	}
 }
 
-
+.page-info h2,
+.page-info h3,
+.page-info h4,
+.page-info h5 {
+	color: $brand-primary;
+}
 
 .page-info {
 	min-height: 100%;
@@ -389,12 +451,41 @@
 }
 	
 
+.page-info h1 {
+	padding: 3px 5px;	
+	display: inline-block;
+	margin: 0 0 20px;
+	position: relative;
+	overflow: hidden;
+	line-height: 1;
+
+	&::before {
+		content: "";
+		transition: transform $transition-time $transition-bez;
+		transition-delay: $transition-time;
+		background: rgba(255,255,255,0.025);
+		transform: translate(-100%, 0);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+// WHEN IN VIEW
+.page-info.sps--blw h1::before {
+	transform: translate(0, 0);
+}
+
+
+
 // TRANSITIONS FOR PAGE INFO
 .page-info.sps {
-	h2 {
+	h2, h3 {
 		transition: transform $transition-time ease-in-out, opacity $transition-time ease-in-out;
 		transition-delay: $transition-time;
-		transform: translate(0, 30px);
+		transform: translate(-20px, 0);
 		opacity: 0;
 		color: $brand-primary;
 		font-size: 35px;
@@ -407,6 +498,16 @@
 	    border-radius: 5px;
 	    margin-bottom: 20px;
 
+	    &::before {
+	    	content: "";
+	    	border-top: 1px solid $brand-primary;
+	    	position: absolute;
+	    	width: 10px;
+	    	left: -20px;
+	    	top: 50%;
+	    }
+
+	    // RESPONSIVE
 		@include media-breakpoint-up(md) {
 			top: 10px;
 		}
@@ -418,6 +519,14 @@
 		}
 	}
 
+	h3 {
+		font-size: 30px;
+	}
+
+	h4 {
+		margin-bottom: 15px;
+	}
+
 
 
 	// WHEN IN VIEW
@@ -426,7 +535,7 @@
 			opacity: 0.1;
 			letter-spacing: 0;
 		}
-		h2 {
+		h2, h3 {
 			transform: translate(0, 0);
 			opacity: 1;
 		}
@@ -438,32 +547,38 @@
 .profile--dl {
 	display: flex;
 	margin-bottom: 0;
-	font-size: 16px;
+	font-size: 15px;
 
 	&:last-of-type {
 		margin-bottom: 30px;
 	}
 
 	dt {
-		width: 20%;
-		flex: 0 0 20%;
+		font-family: $font-family-sans-serif-alt;
+		width: 23%;
+		flex: 0 0 23%;
+		font-weight: normal;
 		font-size: 12px;
 		text-transform: uppercase;
 		color: darken($white, 50%);
+		position: relative;
+    	top: 4px;
 	}
 	dd {
 		width: 80%;
 		flex: 0 0 80%;
+		margin-bottom: 5px;
 	}
 }
 
-.profile--list {
+.profile--list,
+.profile--satellites {
 	padding: 0;
 	list-style-type: none;
 	margin-bottom: 30px;
 
 	li {
-		margin-left: 20px;
+		margin-left: 0;
 		position: relative;
 		margin-bottom: 5px;
 
@@ -474,12 +589,27 @@
 			top: 12px;
 			background: $brand-primary;
 			border-radius: 100%;
-			border-radius: 100%;
 			width: 5px;
 			height: 5px;	
 		}
 	}
 }
+
+
+.profile--satellites {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 0 0 20px;
+}
+
+.profile--satellites li {
+	flex: 0 0 40%;
+	font-family: $font-family-sans-serif-alt;
+	color: darken($white, 50%);
+	text-transform: uppercase;
+}
+
 
 .sps h2,
 .bio-img-col,
@@ -490,3 +620,11 @@
 }
 
 
+
+.cite-p {
+	margin-bottom: 0;
+}
+
+cite {
+	font-size: 12px;
+}
