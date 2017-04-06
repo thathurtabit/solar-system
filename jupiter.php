@@ -16,7 +16,7 @@
           <div id="page-cover" class="page page--jupiter sps">
             
            <h1>Jupiter</h1>
-           <h2>The Solar System's Largest Gas Giant</h2>
+           <h2>The Solar System's Largest Planet</h2>
 
            <button class="btn-scroll btn-scroll--down">
             <span class="sr-only">Scroll down</span>

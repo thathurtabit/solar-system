@@ -4,18 +4,47 @@
 // @include media-breakpoint-up(lg) { ... }
 // @include media-breakpoint-up(xl) { ... }
 
-.navbar-brand {
-	background: url(../images/logo.svg) no-repeat center;
-	background-size: 60%;
+.nav-link.navbar-brand {	
     display: block;
-    width: $navbar-height;
     height: $navbar-height;
+    line-height: $navbar-height;
+    width: 180px !important;
+    padding: 2px 10px !important;
+
+    h1 {
+    	margin: 0;
+    	height: $navbar-height;
+    	line-height: $navbar-height;
+    	transition: letter-spacing $transition-time ease-in-out, color $transition-time ease-in-out;
+		display: block;
+		text-align: center;
+		font-family: $font-family-sans-serif;
+		font-size: 17px;
+	    letter-spacing: 2px;
+	    text-transform: uppercase;
+	    padding: 2px 10px!important;
+	    letter-spacing: 2px;
+	    color: rgba(255,255,255,0.8);
+    }
+
+    &:hover,
+    &:active {
+    	background-color: transparent;
+    }
+
+    @include media-breakpoint-up(md) {
+    	position: fixed !important;
+    	bottom: 0;
+    	left: 0;
+    }
 }
 
 .navbar {	
-	background: rgba(0,0,0,0.01);
+	background: rgba(0,0,0,0.35);
+
 	// RESPONSIVE
 	@include media-breakpoint-up(md) {
+		background: rgba(0,0,0,0.01);
 		top: 0;
 		left: 0;
 	}
@@ -34,14 +63,11 @@
     padding: .25rem;
     border: 0;
     border-radius: 0;
-    background-color: $gray-darker;
+    background-color: $brand-primary;
     width: $navbar-height;
     height: $navbar-height;
     outline: none !important;
-
-    &:hover .navbar-toggler-bar::before {		
-		transform: rotate(0deg);
-	}
+    cursor: pointer;
 }
 
 .navbar-toggler-bar,
@@ -57,7 +83,6 @@
 }
 
 .collapsed .navbar-toggler-bar::before {
-	transition: transform $transition-time ease-in-out;
 	content: "";
 	transform: rotate(90deg);
 }
@@ -67,9 +92,11 @@
 
 .nav-item {
 	overflow: hidden;
+	background-color: $white;
 
 	// RESPONSIVE
 	@include media-breakpoint-up(md) {
+		background-color: transparent;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -103,7 +130,7 @@
 	border-radius: 100%;
 	background-color: $gray-darker;
 	z-index: -1;
-	opacity: 0.50;
+	//opacity: 0.50;
 }
 
 
@@ -111,15 +138,24 @@
 .nav-link {
 	transition: letter-spacing $transition-time ease-in-out, color $transition-time ease-in-out;
 	display: block;
-	text-align: right;
-	font-family: $font-family-sans-serif;
-	font-size: 17px;
+	text-align: center;
+	font-family: $font-family-sans-serif-alt;
+	font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 2px 10px!important;
+    padding: 10px!important;
     letter-spacing: 2px;
-    color: rgba(255,255,255,0.8);
-    flex: 1;
+    color: $gray-darker;
+    position: relative;
+    width: 100%;
+
+    // RESPONSIVE
+	@include media-breakpoint-up(md) {
+		font-family: $font-family-sans-serif;
+		color: rgba(255,255,255,0.8);
+		font-size: 17px;
+		padding: 2px 10px!important;
+	}
 
     &::before {
     	transition: width $transition-time $transition-bez, border-color $transition-time $transition-bez, transform $transition-time $transition-bez;
@@ -130,7 +166,7 @@
 		position: absolute;
 		left: 50%;
 		border-top: 1px solid;
-		border-color: $gray-dark;
+		border-color: $brand-primary;
 		height: 0;
 		z-index: -1;
     }
@@ -149,10 +185,16 @@
     }
 
     &:hover,
-    &:active,
-    &:focus {
-    	color: rgba(255,255,255,1);
+    &:active {
+    	color: $brand-primary;
     	letter-spacing: 3px;
+    	background-color: darken($white, 5%);
+
+    	// RESPONSIVE
+		@include media-breakpoint-up(md) {
+			color: rgba(255,255,255,1);
+			background-color: transparent;
+		}
 
     	&::before {
     		width: 20px;
@@ -165,6 +207,10 @@
 			transform-origin: top;
 			transition-delay: 0s;
     	}
+    }
+
+    &:focus {
+    	color: $white;
     }
 
 	@include media-breakpoint-up(md) {
@@ -186,20 +232,24 @@
 .curr-nav-saturn .nav-item.nav-saturn,
 .curr-nav-uranus .nav-item.nav-uranus,
 .curr-nav-neptune .nav-item.nav-neptune {
-	background-color: rgba(0,0,0,0.05);
+	background-color: darken($white, 10%);
 
-	&::before {
-		content: "";
-		width: 10px;
-		bottom: 14px;
-		transform: translate(-5px,0);
-		position: absolute;
-		left: 50%;
-		border-top: 1px solid;
-		height: 0;
-		z-index: -1;
-		width: 20px;
-		border-color: $brand-primary;
-		transform: translate(-10px,0);
+	@include media-breakpoint-up(md) {
+		background-color: rgba(0,0,0,0.05);
+
+		&::before {
+			content: "";
+			width: 10px;
+			bottom: 14px;
+			transform: translate(-5px,0);
+			position: absolute;
+			left: 50%;
+			border-top: 1px solid;
+			height: 0;
+			z-index: -1;
+			width: 20px;
+			border-color: $brand-primary;
+			transform: translate(-10px,0);
+		}
 	}
 }

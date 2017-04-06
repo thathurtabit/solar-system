@@ -9,7 +9,7 @@ $root = "http://localhost/blank-space";
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-bar"></span>
   </button>
-  <a class="navbar-brand nav-link sr-only" href="<?php echo $root ?>" data-animation="false" data-toggle="tooltip" data-placement="right" title="Blank Space"><h1 class="sr-only">Blank Space</h1></a>
+  <a class="navbar-brand nav-link" href="<?php echo $root ?>" title="The Solar System"><h1>The Solar System</h1></a>
 
   <div class="collapse navbar-collapse" id="navbarToggler">
     <ul class="navbar-nav">

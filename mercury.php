@@ -16,7 +16,7 @@
           <div id="page-cover" class="page page--mercury sps">
             
            <h1>Mercury</h1>
-           <h2>The smallest and innermost planet in the Solar System</h2>
+           <h2>The smallest planet in the Solar System</h2>
 
            <button class="btn-scroll btn-scroll--down">
             <span class="sr-only">Scroll down</span>

@@ -1,4 +1,4 @@
-<?php $websiteName = "The Solar System"; ?>
+<?php $websiteName = "The Solar System  |  thesolarsystem.space"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,14 +19,14 @@
   
   <title><?php echo $pageName . ' ' . $websiteName; ?></title>
 
-  <link rel="canonical" href="http://weareblank.space">
+  <link rel="canonical" href="http://thesolarsystem.space">
   <meta property="og:locale" content="en_GB">
   <meta property="og:type" content="website">
   <meta property="og:title" content="<?php echo $pageName . ' ' . $websiteName; ?>">
   <meta property="og:description" content="<?php echo $pageName . ' ' . $websiteName; ?>">
-  <meta property="og:url" content="http://weareblank.space">
+  <meta property="og:url" content="http://thesolarsystem.space">
   <meta property="og:site_name" content="<?php echo $websiteName; ?>">
-  <meta property="og:image" content="http://weareblank.space/dist/images/og.png" />
+  <meta property="og:image" content="http://thesolarsystem.space/dist/images/og.png" />
   <meta name="twitter:card" content="<?php echo $pageName . ' ' . $websiteName; ?>">
   <meta name="twitter:description" content="<?php echo $pageName . ' ' . $websiteName; ?>">
   <meta name="twitter:title" content="<?php echo $websiteName; ?>">
