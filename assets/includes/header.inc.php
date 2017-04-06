@@ -26,7 +26,7 @@
   <meta property="og:description" content="<?php echo $pageName . ' ' . $websiteName; ?>">
   <meta property="og:url" content="http://thesolarsystem.space">
   <meta property="og:site_name" content="<?php echo $websiteName; ?>">
-  <meta property="og:image" content="http://thesolarsystem.space/dist/images/og.png" />
+  <meta property="og:image" content="http://thesolarsystem.space/dist/images/og.jpg" />
   <meta name="twitter:card" content="<?php echo $pageName . ' ' . $websiteName; ?>">
   <meta name="twitter:description" content="<?php echo $pageName . ' ' . $websiteName; ?>">
   <meta name="twitter:title" content="<?php echo $websiteName; ?>">

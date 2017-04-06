@@ -228,7 +228,7 @@
 .page--snippet  {
 	width: 100%;
 	padding: 50px 40px 30px;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .page--animation,
@@ -296,7 +296,7 @@
 }
 
 .page--animation__satellites {
-	padding: 0 5%;
+	padding: 0 0 0 5%;
 }
 
 .page--animation__planet {
@@ -596,7 +596,7 @@
 		color: $brand-primary;
 		font-size: 35px;
 		position: relative;
-		padding-left: 20px;
+		padding-left: 0;
 		padding-right: 20px;
 		padding-top: 10px;
 	    padding-bottom: 10px;
@@ -651,7 +651,7 @@
 .profile--dl {
 	display: flex;
 	margin-bottom: 0;
-	font-size: 15px;
+	font-size: 13px;
 	align-items: center;
 	justify-content: center;
 
@@ -666,7 +666,7 @@
 		}
 	}
 
-	dt {
+	dt {		
 		font-family: $font-family-sans-serif-alt;
 		font-weight: normal;
 		font-size: 12px;
@@ -678,16 +678,14 @@
 		text-align: right;
 
     	@include media-breakpoint-up(xl) {
-    		//top: 4px;
-			width: 23%;
-			flex: 0 0 23%;
+			width: 20%;
+			flex: 0 0 20%;
 			text-align: left;
 			margin-right: 0;
     	}
 	}
 	dd {
 		margin-bottom: 5px;
-		font-family: $font-family-sans-serif-alt;
 
 		@include media-breakpoint-up(xl) {
 			width: 80%;

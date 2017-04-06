@@ -35,7 +35,7 @@
                 <h2>Planet Profile:</h2>
 
                 <dl class="profile--dl">
-                  <dt>Equatorial Diameter:</dt>
+                  <dt>Equator Diameter:</dt>
                   <dd>12,756 km</dd>
                 </dl>
 

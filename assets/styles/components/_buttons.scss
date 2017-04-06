@@ -6,7 +6,7 @@
 	border-radius: 100%;
 	position: absolute;
 	left: 50%;
-	margin-left: -14px;
+	margin-left: -13px;
 	box-shadow: none;
 	border: 0;
 	z-index: 5;
@@ -43,6 +43,7 @@
 
 	&::before {
 		border-color: transparent rgba(255,255,255,0.5) rgba(255,255,255,0.5) transparent;
+		transform: rotate(45deg);
 		animation: down-arrow $transition-time ease-in-out 2s infinite alternate;
 		z-index: 2;
 	}
@@ -93,6 +94,7 @@
 
 	&::before {
 		border-color: rgba(255,255,255,0.5) transparent transparent rgba(255,255,255,0.5);
+		transform: rotate(45deg);
 		animation: up-arrow $transition-time ease-in-out 2s infinite alternate;
 		z-index: 2;
 	}
