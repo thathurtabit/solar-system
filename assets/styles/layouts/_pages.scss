@@ -792,6 +792,14 @@
 	}
 }
 
+.page-info--mercury .profile--satellites li,
+.page-info--venus .profile--satellites li {
+	flex: 0 0 100% !important;
+
+	@include media-breakpoint-up(md) {
+		flex: 0 0 47% !important;
+	}
+}
 
 .sps h2,
 .bio-img-col,
