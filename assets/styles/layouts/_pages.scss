@@ -287,16 +287,35 @@
 }
 
 .page--animation {
-	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 40px 10px;
+
+	@include media-breakpoint-up(md) {
+		padding: 50px 0 10px;
+		flex-direction: row;
+	}
+
+	@include media-breakpoint-up(xl) {
+		flex-direction: row;
+		padding: 100px 40px 0;
+	}
 }
 
 .page--animation__planet,
 .page--animation__satellites {
-	flex: 0 0 50%;
+	@include media-breakpoint-up(sm) {
+		flex: 0 0 50%;
+	}
 }
 
 .page--animation__satellites {
-	padding: 0 0 0 5%;
+	width: 100%;
+	margin-top: 30px;
+	@include media-breakpoint-up(md) {
+		padding: 0 0 0 5%;
+		margin-top: 0;
+	}
 }
 
 .page--animation__planet {
@@ -603,13 +622,27 @@
 	    border-radius: 5px;
 	    margin-bottom: 20px;
 
-	    &::before {
+	    &::before,
+	    &::after {
 	    	content: "";
 	    	border-top: 1px solid $brand-primary;
 	    	position: absolute;
 	    	width: 10px;
-	    	left: -20px;
+	    	left: 0;
 	    	top: 50%;
+
+	    	@include media-breakpoint-up(xl) {
+				left: -30px;
+	    	}
+	    }
+
+	    &:after {
+	    	left: inherit;
+	    	right: 0;
+
+	    	@include media-breakpoint-up(xl) {
+				display: none;
+	    	}
 	    }
 
 	    // RESPONSIVE
@@ -649,11 +682,17 @@
 
 
 .profile--dl {
-	display: flex;
-	margin-bottom: 0;
+	display: block;
+	margin-bottom: 15px;
 	font-size: 13px;
-	align-items: center;
-	justify-content: center;
+
+	@include media-breakpoint-up(md) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0;
+	}
+
 
 	&:last-of-type {
 		margin-bottom: 30px;
@@ -674,8 +713,12 @@
 		color: darken($white, 50%);
 		position: relative;
     	top: -1px;
-    	margin-right: 10px;
-		text-align: right;
+    	
+
+		@include media-breakpoint-up(md) {
+			margin-right: 10px;
+			text-align: right;
+		}
 
     	@include media-breakpoint-up(xl) {
 			width: 20%;
@@ -730,7 +773,11 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 0 0 0 20px;
+	
+
+	@include media-breakpoint-up(sm) {
+		margin: 0 0 0 20px;
+	}
 }
 
 .profile--satellites li {
@@ -738,6 +785,11 @@
 	font-family: $font-family-sans-serif-alt;
 	color: darken($white, 50%);
 	text-transform: uppercase;
+
+	@include media-breakpoint-up(sm) {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 
