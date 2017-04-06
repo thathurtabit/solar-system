@@ -1,4 +1,4 @@
-<?php $websiteName = "The Solar System  |  thesolarsystem.space"; ?>
+<?php $websiteName = "The Solar System | thesolarsystem.space"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,18 +17,18 @@
   <link rel="mask-icon" href="<?php echo $myPath; ?>dist/images/safari-pinned-tab.svg" color="#1f2021">
   <meta name="theme-color" content="#1f2021">
   
-  <title><?php echo $pageName . ' ' . $websiteName; ?></title>
+  <title><?php echo $pageName . ' Facts, info and images about ' . $websiteName; ?> </title>
 
   <link rel="canonical" href="http://thesolarsystem.space">
   <meta property="og:locale" content="en_GB">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<?php echo $pageName . ' ' . $websiteName; ?>">
-  <meta property="og:description" content="<?php echo $pageName . ' ' . $websiteName; ?>">
+  <meta property="og:title" content="<?php echo $pageName . ' Facts, info and images about ' . $websiteName; ?>">
+  <meta property="og:description" content="<?php echo $pageName . ' Facts, info and images about ' . $websiteName; ?>">
   <meta property="og:url" content="http://thesolarsystem.space">
   <meta property="og:site_name" content="<?php echo $websiteName; ?>">
   <meta property="og:image" content="http://thesolarsystem.space/dist/images/og.jpg" />
-  <meta name="twitter:card" content="<?php echo $pageName . ' ' . $websiteName; ?>">
-  <meta name="twitter:description" content="<?php echo $pageName . ' ' . $websiteName; ?>">
+  <meta name="twitter:card" content="<?php echo $pageName . ' Facts, info and images about ' . $websiteName; ?>">
+  <meta name="twitter:description" content="<?php echo $pageName . ' Facts, info and images about ' . $websiteName; ?>">
   <meta name="twitter:title" content="<?php echo $websiteName; ?>">
 </head>
 
