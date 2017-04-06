@@ -130,14 +130,13 @@
 		transition: transform $transition-time ease-in-out, opacity $transition-time ease-in-out;
 		transition-delay: $transition-time;
 		transform: translate(1vw, 0);
-		font-size: 20px;
+		font-size: 13px;
 		position: absolute;
 		top: -10px;
 		left: 4vw;
 		opacity: 0;
 
 		@include media-breakpoint-down(sm) {
-			font-size: 15px;
 			position: absolute;
 			left: 50%;
 			margin-left: -20px;
@@ -445,7 +444,25 @@
 
 .page-info-content {
 	position: relative;
-	top: -10vh;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: 150px;
+
+	.text-col {
+		margin-bottom: 20px;
+	}
+
+	@include media-breakpoint-up(md) {
+		top: 30px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		top: -50px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		top: -100px;
+	}
 }
 
 .page-info {
@@ -468,7 +485,10 @@
 
 
 .page-info--home {
+	justify-content: flex-start;
+
 	@include media-breakpoint-up(md) {
+		justify-content: center;
 		background: url(../images/bg-scale-planets.jpg) no-repeat;
 		background-size: cover;
 		background-position: 50% 25%;

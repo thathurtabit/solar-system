@@ -271,10 +271,10 @@
 }
 
 .btn-slide-bg::after {
-	transition: transform $transition-time ease-in-out;
+	transition: transform $transition-time / 2 ease-in-out;
 	content: "";
 	position: absolute;
-	background: rgba(0,0,0,0.1);
+	background: rgba(255,255,255,0.05);
 	border-radius: 30px;
 	top: 0;
 	left: 0;
