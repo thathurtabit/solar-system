@@ -115,8 +115,8 @@
             <span class="sr-only">Scroll up</span>
           </button>
 
-          <a href="<?php echo $root; ?>/sun" class="btn-next">
-            <span><strong>Visit:</strong> Sun</span>
+          <a href="<?php echo $root; ?>" class="btn-next">
+            <span><strong>Return to:</strong> The Solar System</span>
           </a>
 
           </div>
