@@ -71,7 +71,7 @@
                   <li>Uranus is only visible via telescope</li>
                   <li>Uranus turns on its axis once every 17 hours, 14 minutes</li>
                   <li>Uranus is often referred to as an "ice giant" planet</li>
-                  <li>Uranus hits the coldest temperatures of any planet, with a minimum atmospheric temperature of -224 &deg;C</li>
+                  <li>Uranus hits the coldest temperatures of any planet, with a minimum atmospheric temperature of -224 &deg;C.</li>
                   
                 </ul>
 

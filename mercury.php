@@ -36,7 +36,7 @@
 
                 <dl class="profile--dl">
                   <dt>First Record:</dt>
-                  <dd>14th century BC</dd>
+                  <dd>14th Century BC</dd>
                 </dl>
 
                 <dl class="profile--dl">

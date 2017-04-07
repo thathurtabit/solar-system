@@ -70,7 +70,7 @@
                   <li>The Earth’s rotation is gradually slowing; at approximately 17 milliseconds per hundred years</li>
                   <li>Earth has a powerful magnetic field due to its nickel-iron core, this helps protect us from solar wind</li>
                   <li>The Earth is the densest planet in the Solar System</li>
-                  <li>The Earth's only natural satellite, The Moon, is slowly drifting further away</li>
+                  <li>The Earth's only natural satellite, The Moon, is slowly drifting further away.</li>
                   
                 </ul>
 

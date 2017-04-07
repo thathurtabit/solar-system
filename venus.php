@@ -36,7 +36,7 @@
 
                 <dl class="profile--dl">
                   <dt>First Record:</dt>
-                  <dd>17th century BC</dd>
+                  <dd>17th Century BC</dd>
                 </dl>
 
                 <dl class="profile--dl">
@@ -65,7 +65,7 @@
                   <li>A year on Venus takes 225 Earth days</li>
                   <li>Venus is nearly as big as the Earth with a diameter of 12,104 km</li>
                   <li>A day on the surface of Venus (solar day) would appear to take 117 Earth days</li>
-                  <li>The surface temperature on Venus can reach 471&deg;C</li>
+                  <li>The surface temperature on Venus can reach 471&deg;C.</li>
                   
                 </ul>
 

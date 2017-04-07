@@ -143,6 +143,9 @@
     color: $white;
     letter-spacing: 2px;
     text-transform: uppercase;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
 
 	@include media-breakpoint-up(md) {
 		bottom: 60px;

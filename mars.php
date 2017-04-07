@@ -71,7 +71,7 @@
                   <li>Mars is home to the tallest mountain in the solar system: Olympus Mons</li>
                   <li>Mars has the largest dust storms in the solar system</li>
                   <li>On Mars the Sun appears about half the size as it does on Earth</li>
-                  <li>Pieces of Mars have fallen to Earth</li>
+                  <li>Pieces of Mars have fallen to Earth.</li>
                   
                 </ul>
 

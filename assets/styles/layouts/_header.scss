@@ -45,9 +45,12 @@
 
 	// RESPONSIVE
 	@include media-breakpoint-up(md) {
-		background: rgba(0,0,0,0.01);
 		top: 0;
 		left: 0;
+	}
+
+	@include media-breakpoint-up(xl) {
+		background: rgba(0,0,0,0.01);
 	}
 }
 

@@ -65,10 +65,10 @@
 
                 <ul class="profile--list">
                   <li>At its centre the Sun reaches temperatures of 15 million &deg;C</li>
-                  <li>The Sun is all the colours mixed together, this appears white to our eyes</li>
+                  <li>The Sun is 4.6 billion years old</li>
                   <li>The Sun is all the colours mixed together, this appears white to our eyes</li>
                   <li>The Sun is mostly composed of hydrogen (70%) and Helium (28%)</li>
-                  <li>The Sun is 109 times wider than the Earth and 330,000 times as massive</li>
+                  <li>The Sun is 109 times wider than the Earth and 330,000x as massive.</li>
                 </ul>
 
                 <p class="cite-p"><cite>- <a href="http://space-facts.com/" title="Info: Space Facts" target="_blank" class="btn-slide-bg">More Facts</a></cite> </p>

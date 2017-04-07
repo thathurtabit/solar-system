@@ -16,7 +16,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-3210944-18', 'auto');
+  ga('create', 'UA-96987271-1', 'auto');
   ga('send', 'pageview');
 
 </script>

@@ -71,7 +71,7 @@
                   <li>Jupiter orbits the Sun once every 11.8 Earth years</li>
                   <li>Jupiter has a thin ring system, made of dust particles from comet and asteroid impacts</li>
                   <li>90% of the atmosphere of Jupiter is made of hydrogen</li>
-                  <li>Jupiter's moon Ganymede is the largest moon in the Solar System; it's larger than the planet Mercury</li>
+                  <li>Jupiter's moon Ganymede is the largest moon in the Solar System; it's larger than the planet Mercury.</li>
                   
                 </ul>
 

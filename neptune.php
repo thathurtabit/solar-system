@@ -16,7 +16,7 @@
           <div id="page-cover" class="page page--neptune sps">
             
            <h1>Neptune</h1>
-           <h2>It will utterly annihilate your soul</h2>
+           <h2>Farthest planet from the Sun</h2>
 
            <button class="btn-scroll btn-scroll--down">
             <span class="sr-only">Scroll down</span>
@@ -71,7 +71,7 @@
                   <li>Neptune appears blue because the methane absorbs the red light</li>
                   <li>Large storms whirl through its upper atmosphere, and high-speed winds track around the planet at up 600 meters per second</li>
                   <li>Neptune has a very thin collection of rings</li>
-                  <li>Neptune spins on its axis very rapidly, despite its size, the clouds on its equator circle the planet every 18 hours</li>
+                  <li>Neptune spins on its axis very rapidly, despite its size, the clouds on its equator circle the planet every 18 hours.</li>
                   
                 </ul>
 
