@@ -49,7 +49,7 @@
           //var getURL = window.location.pathname.split("/").pop();
           var getURL = window.location.pathname;
           var getURLsplit = getURL.split("/"); // split into array
-          var myPath = getURLsplit[2]; // get part of the array
+          var myPath = getURLsplit[1]; // get part of the array
           var currentURL = 'curr-nav-' + myPath;
         
             //Remove all classes by default
@@ -72,34 +72,7 @@
             $('[data-toggle="tooltip"]').tooltip();
           });
         }
-        
-
-        // // SCROLL TO SECTION FUNCTION
-        // function scrollSections() {
-        //   // Mouse scroll / slide
-        //   var indicator = new WheelIndicator({
-        //     elem: document.querySelector('.barba-container'),
-        //     callback: function(e){
-
-        //       if (e.direction === "down") {
-
-        //           $('html, body').animate({
-        //               scrollTop: ($('#page-info').offset().top)
-        //           },500);
-                
-
-        //       } else if (e.direction === "up") {
-
-        //         $('html, body').animate({
-        //             scrollTop: ($('#page-cover').offset().top)
-        //         },500);  
-                
-        //       }
-        //     }
-        //   });
-        //   //The method call
-        //   indicator.getOption('preventMouse'); // true
-        // }
+               
 
         // USE http://imagesloaded.desandro.com/#background
         // To see if images were loaded before displaying them
