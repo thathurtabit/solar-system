@@ -1,0 +1,1 @@
+export const WAYPOINTS_OFFSET = 200;
