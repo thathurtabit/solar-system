@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter basename="/solar-system">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
